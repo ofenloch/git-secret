@@ -6,3 +6,6 @@
 
 ## Preparations
 
+Before you can use git-secret you must create a RSA key pair. Check out README-gpg.md hot to do that.
+
+Once you have a RSA key pair you can initialize a new and empty or an existing git repository with `git secret init`
