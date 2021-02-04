@@ -190,7 +190,7 @@ sub   rsa4096/DBF0DAE5D724176C 2021-02-04 [E]
 ofenloch@teben:~$ 
 ```
 
-To get a lsit of all keys you have the private key do this:
+To get a lsit of all keys you have the private key do this (you'll need the password for your private key):
 
 ```bash
 ofenloch@teben:~$ gpg --list-secret-keys --keyid-format LONG
