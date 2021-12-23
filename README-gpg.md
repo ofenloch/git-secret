@@ -148,9 +148,9 @@ The file *15812559_ofenloch@users.noreply.github.com.key* contains your public k
 ofenloch@teben:~$ cat ~/15812559_ofenloch@users.noreply.github.com.key
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
-mQINBGAb8QMBEADRETId+Nq+Ons1U23vIwY7ikzNSPNvNk/IzUWU+ggwGu02Zqy1
-OGr4hV5BHe2LBsGmEWa+4C5kaRqhyebZ8wjq7YVYt7HwSyr5TLH6CNQagFnneHuf
-HnyKirXnGq6xIrivdQb+b939QF3E5sNUZHnsOFjzzgUc6oI1XT7WRwlXZxgY5f+h
+mQINBGCb8QMBEADRETId+Nq+Ons1U23vIqY7ikzNSPNvNk/IzQWU+ggwGu02Zqy1
+OGr4hB5BHe2LBsGmFWc+4C5kaRqhyebZ2wjq5YVYt7HwSyr5TLH8CNQagFnneHuf
+HnyLirXnGq6xIrivdQb+b159QF3E5sNUZHnsOFjzzgUc6oI1XT7YRwlXZxgY2f+h
 ...
 ...
 W9lyCosegTn0nFguarQhXvso4/x/+f1Y
@@ -158,6 +158,15 @@ W9lyCosegTn0nFguarQhXvso4/x/+f1Y
 -----END PGP PUBLIC KEY BLOCK-----
 ofenloch@teben:~$ 
 ```
+
+Yout get the same result if you this
+
+```bash
+ofenloch@teben:~$ gpg --armor --export 15812559_ofenloch@users.noreply.github.com > ~/15812559_ofenloch@users.noreply.github.com.key.2
+ofenloch@teben:~$ diff ~/15812559_ofenloch@users.noreply.github.com.key ~/15812559_ofenloch@users.noreply.github.com.key.2
+ofenloch@teben:~$ 
+```
+
 
 **Get a List of All Keys**
 
@@ -190,7 +199,7 @@ sub   rsa4096/DBF0DAE5D724176C 2021-02-04 [E]
 ofenloch@teben:~$ 
 ```
 
-To get a lsit of all keys you have the private key do this (you'll need the password for your private key):
+To get a list of all keys you have the private key for do this (you'll need the password for your private key):
 
 ```bash
 ofenloch@teben:~$ gpg --list-secret-keys --keyid-format LONG
